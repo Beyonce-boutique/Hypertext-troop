@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #3f84ae; 
+    padding: 10px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    flex: 1;
+}
+.art {
+    flex: 2;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    font-family:'Times New Roman', Times, serif
+}
+nav {
+    margin-left: auto; /* Push nav to the right */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.search-cart-wishlist {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.search-cart-wishlist input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search {
+    flex: 1; 
+}
+
+.search input {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+.search-cart-wishlist a {
+    text-decoration: none;
+      color: white;
+    padding: 0 10px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+h2{
+    font-size: 40px;
+}
+.grid img{
+    height: 
+}
+
+.item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    height: 66%;
+    max-width: 65%;
+    border-radius: 5px;
+    border: 3px solid black;
+
+}
+footer {
+padding: 20px;
+background-color: #336b84;
+color: #fff;
+text-align: center;
+}
+
+footer a {
+color: #fff;
+text-decoration: none;
+}
+
+footer .newsletter input[type="email"] {
+padding: 5px;
+width: 200px;
+margin-top: 10px;
+}
+
+footer button {
+padding: 5px 10px;
+background-color: #4CAF50;
+color: #fff;
+border: none;
+cursor: pointer;
+margin-top: 10px;
+}
+
+form {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
