@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sellerstyle.css">
+    <title>Login & Sign Up</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image2.jpg" alt="Artistry Apparel Logo" width="100px">
+         
+        </div>
+        <div class="art">
+            <h1>Artistry Apparel</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <button id="loginBtn">Login</button>
+                <button id="signupBtn">Sign Up</button>
+            </div>
+            <div class="form-content">
+                <div class="form-box" id="login">
+                    <h2>Login</h2>
+                    <form>
+                        <input type="text" placeholder="Username" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                    <p>Don't have an account? <span id="toSignup">Sign Up</span></p>
+                </div>
+
+                <div class="form-box hidden" id="signup">
+                    <h2>Sign Up</h2>
+                    <form>
+                        <input type="text" placeholder="Username" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <p>Already have an account? <span id="toLogin">Login</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="quick-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">FAQs</a> | <a href="#">Returns</a>
+    </div>
+    <div class="contact-info">
+        <p>Contact Us: support@Artistry Apparel.com | +1-800-555-5555</p>
+    </div>
+    <div class="social-media">
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </div>
+    <div class="newsletter">
+        <p>&copy; 1996-2024, Artistry Apparel.com, Inc. or its affiliates</p>
+      </div>
+</footer>
+    <script>
+        const loginBtn = document.getElementById('loginBtn');
+        const signupBtn = document.getElementById('signupBtn');
+        const loginBox = document.getElementById('login');
+        const signupBox = document.getElementById('signup');
+
+        loginBtn.addEventListener('click', () => {
+            loginBox.classList.remove('hidden');
+            signupBox.classList.add('hidden');
+        });
+
+        signupBtn.addEventListener('click', () => {
+            signupBox.classList.remove('hidden');
+            loginBox.classList.add('hidden');
+        });
+
+        document.getElementById('toSignup').addEventListener('click', () => {
+            signupBox.classList.remove('hidden');
+            loginBox.classList.add('hidden');
+        });
+
+        document.getElementById('toLogin').addEventListener('click', () => {
+            loginBox.classList.remove('hidden');
+            signupBox.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
